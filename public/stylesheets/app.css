@@ -1,0 +1,22 @@
+i.icon
+{
+    font-size:1.5em;
+}
+.container.segment
+{
+    margin-top:7.0em;
+}
+.index.container
+{
+    margin-top:60px;
+}
+#deleteform
+{
+    display:inline;
+}
+#mainheader
+{
+    margin-top:60px;
+    font-size:40px;
+    text-align:center;
+}
