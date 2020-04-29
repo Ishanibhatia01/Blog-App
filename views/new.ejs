@@ -1,0 +1,41 @@
+<!--<% include ./partials/header %>
+<div class="ui main text container segment">
+    <div class="ui huge header">New Blog Post</div>
+    <form class="ui form" action="/blogs" method="Post">
+        <div class="field">
+            <label>Tittle</label>
+       <input type="text"  name="tittle" placeholder="Tittle">
+        </div>
+     <div class="field">
+         <label>Image</label>
+         <input type="text" name="image" placeholder="Image">
+     </div>
+     <div class="field">
+            <label>Blog Content</label>
+            <textarea name="blogbody"></textarea>
+        </div>
+<input type="submit" class="ui violet basic big button"></input>
+    </form>
+</div>
+<% include ./partials/footer %>--->
+<!--Another method of creating a form for that-->
+<% include ./partials/header %>
+<div class="ui main  text container segment">
+    <div class="ui huge header">New Blog Posts </div>
+<form class="ui form" action="/blogs"  method="Post">
+<div class="field">
+    <label>Tittle</label>
+    <input type="text" name="blogs[tittle]" placeholder="tittle">
+    </div>
+    <div class="field">
+        <label>Image</label>
+        <input type="text" name="blogs[image]" placeholder="image">
+    </div>
+    <div class="field">
+        <label>Blog Content</label>
+        <textarea name="blogs[blogbody]"placeholder="blogarea"></textarea>
+    </div>
+    <input type="submit" class="ui basic violet huge button">
+</form>
+</div>
+<% include ./partials/footer %>
